@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "opRufRoFuaICI1cTIxUOWrPWaRymeLA//G3KJ2udTmjKGJUGQxZFU3ZvXNT7gEoHj5AvV3KAX+woaKU8oNzUmg==",
+  "dgSpecHash": "FMigbCqeIlvwZ3wNxgI/YnqzJ5HnlLcAAKtwyaG2R7FI1PGzOcIBszwTsu6GalysK/5O3mV836tI46AId1cl8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\valsi\\source\\repos\\text-analysis\\text-analysis\\text-analysis.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\valsi\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\5.0.0\\microsoft.windowsdesktop.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\valsi\\.nuget\\packages\\microsoft.netcore.app.ref\\5.0.0\\microsoft.netcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\valsi\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\5.0.0\\microsoft.aspnetcore.app.ref.5.0.0.nupkg.sha512",
-    "C:\\Users\\valsi\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\student\\Source\\Repos\\text-analysis\\text-analysis\\text-analysis.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

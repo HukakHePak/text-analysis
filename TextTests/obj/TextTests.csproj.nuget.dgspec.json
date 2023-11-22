@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\valsi\\source\\repos\\text-analysis\\TextTests\\TextTests.csproj": {}
+    "C:\\Users\\student\\Source\\Repos\\text-analysis\\TextTests\\TextTests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\valsi\\source\\repos\\text-analysis\\text-analysis\\text-analysis.csproj": {
+    "C:\\Users\\student\\Source\\Repos\\text-analysis\\text-analysis\\text-analysis.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valsi\\source\\repos\\text-analysis\\text-analysis\\text-analysis.csproj",
+        "projectUniqueName": "C:\\Users\\student\\Source\\Repos\\text-analysis\\text-analysis\\text-analysis.csproj",
         "projectName": "text-analysis",
-        "projectPath": "C:\\Users\\valsi\\source\\repos\\text-analysis\\text-analysis\\text-analysis.csproj",
-        "packagesPath": "C:\\Users\\valsi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valsi\\source\\repos\\text-analysis\\text-analysis\\obj\\",
+        "projectPath": "C:\\Users\\student\\Source\\Repos\\text-analysis\\text-analysis\\text-analysis.csproj",
+        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\student\\Source\\Repos\\text-analysis\\text-analysis\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\valsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -45,49 +45,30 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[5.0.17, 5.0.17]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[5.0.0, 5.0.0]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\valsi\\source\\repos\\text-analysis\\TextTests\\TextTests.csproj": {
+    "C:\\Users\\student\\Source\\Repos\\text-analysis\\TextTests\\TextTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\valsi\\source\\repos\\text-analysis\\TextTests\\TextTests.csproj",
+        "projectUniqueName": "C:\\Users\\student\\Source\\Repos\\text-analysis\\TextTests\\TextTests.csproj",
         "projectName": "TextTests",
-        "projectPath": "C:\\Users\\valsi\\source\\repos\\text-analysis\\TextTests\\TextTests.csproj",
-        "packagesPath": "C:\\Users\\valsi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\valsi\\source\\repos\\text-analysis\\TextTests\\obj\\",
+        "projectPath": "C:\\Users\\student\\Source\\Repos\\text-analysis\\TextTests\\TextTests.csproj",
+        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\student\\Source\\Repos\\text-analysis\\TextTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\valsi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -101,8 +82,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\valsi\\source\\repos\\text-analysis\\text-analysis\\text-analysis.csproj": {
-                "projectPath": "C:\\Users\\valsi\\source\\repos\\text-analysis\\text-analysis\\text-analysis.csproj"
+              "C:\\Users\\student\\Source\\Repos\\text-analysis\\text-analysis\\text-analysis.csproj": {
+                "projectPath": "C:\\Users\\student\\Source\\Repos\\text-analysis\\text-analysis\\text-analysis.csproj"
               }
             }
           }
@@ -116,45 +97,17 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.NET.Test.Sdk": {
-              "target": "Package",
-              "version": "[17.5.0, )"
-            },
-            "NUnit": {
-              "target": "Package",
-              "version": "[3.13.3, )"
-            },
-            "NUnit.Analyzers": {
-              "target": "Package",
-              "version": "[3.6.1, )"
-            },
-            "NUnit3TestAdapter": {
-              "target": "Package",
-              "version": "[4.4.2, )"
-            },
-            "coverlet.collector": {
-              "target": "Package",
-              "version": "[3.2.0, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
