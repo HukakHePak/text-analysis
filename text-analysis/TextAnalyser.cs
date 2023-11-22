@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace text_analysis
 {
-    class TextAnalyser
+    public class TextAnalyser
     {
         public string Content;
 
@@ -17,5 +17,15 @@ namespace text_analysis
         }
 
         private string[] PunctuationMarks = { "!", "?", ":", ",", "." };
+
+        public TextAnalyser(string path)
+        {
+           
+        }
+
+        public TextAnalyser()
+        {
+
+        }
     }
 }
