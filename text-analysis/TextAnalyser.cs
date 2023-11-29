@@ -12,7 +12,7 @@ namespace text_analysis
 
         public string Load(string uri)
         {
-            Uri Load = new Uri(uri);
+            //Uri Load = new Uri(uri);
             return default;
         }
 
