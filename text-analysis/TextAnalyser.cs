@@ -29,5 +29,16 @@ namespace text_analysis
         {
 
         }
+        public string[] ParseWords(string str)
+        {
+            List<string> result = new List<string>();
+            char[] delimiterChars = { ' ', ',', '.', '?', '!', ':', '\t' };
+            result = str.Split(delimiterChars).Where(s => !string.IsNullOrWhiteSpace(s)).ToList();
+            return result.ToArray();
+        }
+        public int CountWords()
+        {
+            return ParseWords(Content).Count();
+        }
     }
 }
