@@ -13,14 +13,9 @@ namespace text_analysis
 
         public string Load(string uri)
         {
-<<<<<<< HEAD
             Uri Load = new Uri(uri);
             Content = File.ReadAllText(Load.OriginalString);
             return Content;
-=======
-            //Uri Load = new Uri(uri);
-            return default;
->>>>>>> origin
         }
 
         private string[] PunctuationMarks = { "!", "?", ":", ",", "." };
