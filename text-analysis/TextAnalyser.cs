@@ -20,6 +20,18 @@ namespace text_analysis
 
         private string[] PunctuationMarks = { "!", "?", ":", ",", "." };
 
+        double ReadTime = 1000;
+
+        public int PunctuationCount()
+        {
+            return Content.Count(c => PunctuationMarks.Contains(c.ToString()));
+        }
+
+        double AverageReadTime()
+        {
+            return Content.Length / 1000 * ReadTime;
+        }
+
         public TextAnalyser(string path)
         {
             Content = File.ReadAllText(path);
