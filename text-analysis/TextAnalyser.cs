@@ -18,18 +18,32 @@ namespace text_analysis
             return Content;
         }
 
-        private string[] PunctuationMarks = { "!", "?", ":", ",", "." };
+        private char[] PunctuationMarks = {',', '.', '?', '!', ':', };
+        private char[] Delimiters = { ' ', ',', '.', '?', '!', ':', '\t' };
 
-        double ReadTime = 1000;
+        double SignsPerMinute = 1000;
 
-        public int PunctuationCount()
+        public int PunctuationCount
         {
-            return Content.Count(c => PunctuationMarks.Contains(c.ToString()));
+            get
+            {
+                var count = 0;
+
+                foreach (var sign in PunctuationMarks)
+                {
+                    count += Content.Count(c => c == sign);
+                }
+
+                return count;
+            }
         }
 
-        public double AverageReadTime()
+        public string AverageReadTime
         {
-            return Content.Length / 1000 * ReadTime;
+           get
+            {
+                return TimeSpan.FromMinutes(Content.Length / SignsPerMinute).ToString(@"hh\:mm\:ss");
+            }
         }
 
         public TextAnalyser(string path)
@@ -41,16 +55,22 @@ namespace text_analysis
         {
 
         }
+
         public string[] ParseWords(string str)
         {
             List<string> result = new List<string>();
-            char[] delimiterChars = { ' ', ',', '.', '?', '!', ':', '\t' };
-            result = str.Split(delimiterChars).Where(s => !string.IsNullOrWhiteSpace(s)).ToList();
+
+            result = str.Split(Delimiters).Where(s => !string.IsNullOrWhiteSpace(s)).ToList();
+
             return result.ToArray();
         }
-        public int CountWords()
+
+        public int WordsCount
         {
-            return ParseWords(Content).Count();
+            get
+            {
+                return ParseWords(Content).Count();
+            }
         }
     }
 }
