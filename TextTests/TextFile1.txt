@@ -1,1 +1,4 @@
-﻿Text file load string success
+﻿Text file load string success. 
+Three punctuation marks.
+twenty words.
+Four strings.
