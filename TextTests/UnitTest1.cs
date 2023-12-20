@@ -2,28 +2,66 @@ namespace TextTests
 {
     public class Tests
     {
+        TextAnalyser analyser;
+        string[] testFilePaths = { "TextFile1.txt" };
+
+        List<TestFile> TestFiles;
+
+ 
         [SetUp]
         public void Setup()
         {
+            TestFiles = new List<TestFile>();
+
+            foreach (var path in testFilePaths)
+            {
+                var file = new TestFile(path, File.ReadAllText(path));
+
+                TestFiles.Add(file);
+            }
         }
 
         [Test]
-        public void Test1()
+        public void TestContent()
         {
-            string filePath = "./TextFile1.txt";
             string fileContent = "Text file load string success";
 
             var TAn = new TextAnalyser();
 
-            Assert.DoesNotThrow(() => {
-                TAn.Load(filePath);
-            });
-
-            // TAn.Content = fileContent;
+            TAn.Content = fileContent;
 
             Assert.That(TAn.Content, Is.EqualTo(fileContent));
-            
-            Assert.Pass();
+        }
+
+        [Test]
+        public void TestLoadFromFile()
+        {
+            var file = TestFiles[0];
+
+            analyser = new TextAnalyser();
+
+            Assert.DoesNotThrow(() =>
+            {
+                analyser.Load(file.Path);
+            });
+
+            Assert.That(analyser.Content, Is.EqualTo(file.Content));
+        }
+
+        [Test]
+        public void TestPunctuationCount()
+        {
+            Assert.That(analyser.PunctuationCount(), Is.EqualTo(4));
+        }
+
+        [Test]
+        public void TestReadTime()
+        {
+            var time = analyser.AverageReadTime();
+
+            Console.WriteLine(time);
+
+            Assert.That(analyser.AverageReadTime(), Is.EqualTo(0));
         }
     }
 }

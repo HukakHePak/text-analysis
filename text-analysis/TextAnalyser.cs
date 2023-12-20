@@ -13,8 +13,8 @@ namespace text_analysis
 
         public string Load(string uri)
         {
-            Uri Load = new Uri(uri);
-            Content = File.ReadAllText(Load.OriginalString);
+            Content = File.ReadAllText(uri);
+
             return Content;
         }
 
@@ -27,14 +27,14 @@ namespace text_analysis
             return Content.Count(c => PunctuationMarks.Contains(c.ToString()));
         }
 
-        double AverageReadTime()
+        public double AverageReadTime()
         {
             return Content.Length / 1000 * ReadTime;
         }
 
         public TextAnalyser(string path)
         {
-            Content = File.ReadAllText(path);
+            Load(path);
         }
 
         public TextAnalyser()
