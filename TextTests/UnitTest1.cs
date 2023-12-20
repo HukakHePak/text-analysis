@@ -51,17 +51,13 @@ namespace TextTests
         [Test]
         public void TestPunctuationCount()
         {
-            Assert.That(analyser.PunctuationCount(), Is.EqualTo(4));
+            Assert.That(analyser.PunctuationCount, Is.EqualTo(4));
         }
 
         [Test]
         public void TestReadTime()
         {
-            var time = analyser.AverageReadTime();
-
-            Console.WriteLine(time);
-
-            Assert.That(analyser.AverageReadTime(), Is.EqualTo(0));
+            Assert.That(analyser.AverageReadTime, Is.EqualTo("00:00:05"));
         }
     }
 }
